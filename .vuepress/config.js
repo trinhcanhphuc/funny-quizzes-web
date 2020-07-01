@@ -1,25 +1,15 @@
 module.exports = {
-    title: 'Tên blog',
-    description: 'Mô tả về blog',
-    locales: {
-        '/vi': {
-        lang: 'vi-VN',
-        title: 'Tên blog tiếng việt',
-        description: 'Mô tả tiếng việt'
-        },
-        '/en': {
-        lang: 'en-VN',
-        title: 'Tên blog tiếng anh',
-        description: 'Mô tả tiếng anh'
-        }
-    },
+    base: '/funny-quizzes-web/',
+    title: 'VuePress Blog Demo',
+    description: 'A simple blog built with VuePress - by Ehkoo',
+    dest: 'docs',
     themeConfig: {
-        sidebar: 'auto',
         nav: [
             { text: 'Trang Chủ', link: '/' },
             { text: 'Giới Thiệu', link: '/about/' },
             { text: 'Ehkoo', link: 'https://ehkoo.com' },
         ],
-    },
-    dest: 'docs'
+        displayAllHeaders: true,
+        sidebar: 'auto'
+    }
 }
